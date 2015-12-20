@@ -1,9 +1,3 @@
-$.ajaxSetup({
-    headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
-});
-
 // dismiss the global search overlay
 (function(){
     $(".close-search-overlay").click(function(){
@@ -36,16 +30,13 @@ $.ajaxSetup({
 (function() {
     $(".global-search-button").click(function() {
         // get the search query
-        var entity = $(".entity-dropdown-item.active").html();
         var query = $("#global-search").val();
         if (query.length > 0) {
-            $.getJSON('/admin/search/', {entity: entity, query: query}, function(response){
-                console.log(response);
-            });
+            console.log('preform the query');
         } else {
             $("#global-search").attr('placeholder', 'You must enter something to search for!');
             setTimeout(function() {
-                
+                var entity = $(".entity-dropdown-item.active").html();
                 $("#global-search").attr('placeholder', 'Search for ' + entity);
             }, 3000)
         }

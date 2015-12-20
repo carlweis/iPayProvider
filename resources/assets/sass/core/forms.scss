@@ -9,3 +9,9 @@ label {
 textarea.form-control {
 	height: auto;
 }
+
+.form-control:focus, #register-form form fieldset input[type='text']:focus, #register-form form fieldset input[type='email']:focus, #register-form form fieldset select:focus, #register-form form fieldset textarea:focus {
+    border-color: #5cb85c;
+    border-size: 3px;
+    outline: none;
+}

@@ -9,11 +9,11 @@
         </ul>
     </nav>
     <section id="call-to-action">
-        <h1>Flat fee concierge medicine for all.</h1>
+        <h1>The practice of medicine redesigned around your health.</h1>
         <p>Pay doctors directly, cutting out insurance companies all together.</p>
-        <div>
+        {{-- <div>
             <a  href="#features-left" id="learn-more">Learn More</a>
             <a href="#register-form" id="register">Register Today</a>
-        </div>
+        </div> --}}
     </section>
 </header>

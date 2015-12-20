@@ -111,6 +111,7 @@ height: 100vh;
 @include respond-to(sm)  {			
 		height: auto;
 		padding: 2rem 0 0 0;
+		font-size: 1.5em;
 }
 @include respond-to(xs)  {
 		height: auto;			
@@ -124,6 +125,7 @@ height: 100vh;
 	clear: both;				
 	margin: 0 auto;
 	padding-top: 20vh;
+	padding: 12rem;
 	text-align: center;
 	color: #FFFFFF;
 	transition: all 500ms ease;
@@ -143,6 +145,7 @@ height: 100vh;
 	h1 {			
 		font-weight: 600;
 		font-size: 3.5rem;
+		padding: 0 3em;
 		text-shadow: 1px 1px 1px rgba(0,0,0, 0.3);
 		
 		@include respond-to(lg)  {
@@ -150,13 +153,16 @@ height: 100vh;
 		}	
 		@include respond-to(md)  {
 			font-size: 2.5rem;
+			padding: 0;
 		}
 		@include respond-to(sm)  {	
 			font-size: 2rem;
+			padding: 0;
 		}
 		@include respond-to(xs)  {
-			font-size: 1.8rem;
+			font-size: 2rem;
 			line-height: 1.3;
+			padding: 0;
 		}
 	}
 	p {
@@ -176,9 +182,10 @@ height: 100vh;
 			font-size: 1.3rem;
 			padding: 1rem 8rem;
 			line-height: 1.4;
+			font-weight: 500;
 		}
 		@include respond-to(xs)  {
-			font-size: 1rem;
+			font-size: 1.2rem;
 			padding: 0 1rem;
 			line-height: 1.4;
 		}
@@ -260,13 +267,13 @@ height: 100vh;
 padding: 4rem 0;
 
 @include respond-to(xs) {
-	padding: 4rem 0 0 0;
+	padding: 0 0 1em 0;
 }
 
 header {	
 	@extend .container;
 	margin: 0 auto;
-	padding-bottom: 4rem;		
+	padding-top: 6rem;		
 	h2 {
 		font-weight: 300;
 		font-size: 1.8rem;
@@ -511,7 +518,7 @@ div#features-slider {
 	@include respond-to(xs) {
 		background: url('/img/know_your_always_covered.jpg') no-repeat -400px 0;
 		background-size: cover;
-		height: 30rem;
+		height: auto;
 	}
 
 	article {
@@ -523,7 +530,7 @@ div#features-slider {
 			padding: 4rem 3rem;
 			h2 {
 				font-size: 2rem;
-				font-weight: 600;
+				font-weight: 700;
 				margin-bottom: 1rem;
 			}
 			p {
@@ -532,10 +539,11 @@ div#features-slider {
 		}
 		h2 {
 			text-shadow: 1px 1px 1px rgba(0,0,0, 0.3);
+			font-size: 2.5rem;
+			margin-bottom: 0.5em;
 		}
 		p {
 			font-size: 1.2rem;
-			font-weight: 300;
 			text-shadow: 1px 1px 1px rgba(0,0,0, 0.3);
 		}
 		div {
@@ -572,16 +580,19 @@ div#features-slider {
 		@extend .col-md-3;
 		padding: 0 4rem;
 		h3 {
-			font-size: 1.2rem;
+			font-size: 1.5rem;
+			
 		}
 		p {
 			color: #9ba5aa;
-			font-size: 0.875rem;
+			font-size: 1rem;
 		}
 
 		@include respond-to(xs) {
 			padding: 0 4rem 2rem 4rem;
-
+			h3 {
+				font-size: 1.3em;
+			}
 			&:last-child {
 				padding: 0 4rem;
 			}
@@ -615,15 +626,18 @@ div#features-slider {
 		@extend .container;
 		text-align: center;
 		padding: 8rem 0 0 0;
+			h2 {
+			font-weight: 700;
+			font-size: 2.3em;
+		}
 		@include respond-to(xs) {
 			padding: 4rem 0 0 0;
 			h2 {
 				font-size: 1.8rem;
+				margin-bottom: 0.5em;
 			}
 		}
-		h2 {
-			font-weight: 700;
-		}
+	
 		p {
 			color: #9ba5aa;
 		}
