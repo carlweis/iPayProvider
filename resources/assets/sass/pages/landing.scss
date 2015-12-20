@@ -1,0 +1,731 @@
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+#logo {
+	background: url('/img/logo_sm.png') no-repeat 0 0;
+	width: 168px;
+	height: 43px; 
+	text-indent: -99999px;
+	display: block;
+	float: left;
+	margin: 2rem;
+
+	@include respond-to(md) {
+		background: url('/img/logo_xs.png') no-repeat 0 0;
+		width: 122px;
+		height: 31px; 
+	}
+	@include respond-to(sm) {
+		float: none;
+		display: block;
+		margin: 0 auto;	
+		padding-top: 1rem;			
+	}
+	@include respond-to(xs)  {			
+		background: url('/img/logo_xs.png') no-repeat 0 0;
+		width: 122px;
+		height: 31px; 
+		float: none;
+		display: block;
+		margin: 0 auto;	
+		padding: 1rem;		
+	}
+} // logo
+
+#global-nav {
+	float: right;
+	margin: 2rem;
+
+	@include respond-to(lg)  {
+		
+	}		
+	@include respond-to(sm) {
+		float: none;
+		display: block;		
+		text-align: center;
+		margin: 1.8rem;
+	}
+	@include respond-to(xs)  {
+		float: none;
+		display: block;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: block;			
+		li {
+			display: inline-block;
+			transition: all 200ms ease;
+			@include respond-to(xs)  {			
+				display: block;
+				text-align: center;
+				padding: 0.5rem 0;
+				border-bottom: dotted 1px rgba(255, 255, 255, 0.2);
+				&:first-child {
+					border-top: dotted 1px rgba(255, 255, 255, 0.2);
+				}
+
+				&:hover {
+					background: rgba(255, 255, 255, 0.05);
+				}
+			}
+			&.active {
+				a {
+					font-weight: 700;
+				}
+			}				
+			a {
+				padding: 0.5rem 0.5rem;
+				color: #FFFFFF;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				font-size: 0.875rem;
+				cursor: pointer;
+				
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+
+#global-header {
+background: url('/img/flat_fee_concierge_medicine_for_all.jpg') no-repeat 0 0;
+background-size: cover;
+height: 100vh;
+
+
+@include respond-to(lg)  {			
+		height: auto;
+		padding:0 0 8rem 0;	
+}
+@include respond-to(md)  {
+	height: auto;
+	padding:0 0 8rem 0;
+}
+@include respond-to(sm)  {			
+		height: auto;
+		padding: 2rem 0 0 0;
+}
+@include respond-to(xs)  {
+		height: auto;			
+		padding: 1rem;
+		display: block;			
+}
+
+
+
+#call-to-action {
+	clear: both;				
+	margin: 0 auto;
+	padding-top: 20vh;
+	text-align: center;
+	color: #FFFFFF;
+	transition: all 500ms ease;
+
+	@include respond-to(lg)  {	
+		padding: 6rem 0;
+	}
+	@include respond-to(md)  {						
+		padding: 4rem 0 0 0;
+	}
+	@include respond-to(sm)  {	
+		padding: 4rem 0;
+	}
+	@include respond-to(xs)  {
+		padding: 1rem 0 2rem 0;
+	}
+	h1 {			
+		font-weight: 600;
+		font-size: 3.5rem;
+		text-shadow: 1px 1px 1px rgba(0,0,0, 0.3);
+		
+		@include respond-to(lg)  {
+				font-size: 3rem;
+		}	
+		@include respond-to(md)  {
+			font-size: 2.5rem;
+		}
+		@include respond-to(sm)  {	
+			font-size: 2rem;
+		}
+		@include respond-to(xs)  {
+			font-size: 1.8rem;
+			line-height: 1.3;
+		}
+	}
+	p {
+		font-weight: 300;
+		font-size: 1.8rem;
+		padding: 1rem 0;
+		text-shadow: 1px 1px 1px rgba(0,0,0, 0.3);
+
+		@include respond-to(lg)  {
+			padding: 1rem 15rem;				
+		}
+		@include respond-to(md)  {
+			font-size: 1.3rem;
+			padding: 0.5rem 0;
+		}
+		@include respond-to(sm)  {	
+			font-size: 1.3rem;
+			padding: 1rem 8rem;
+			line-height: 1.4;
+		}
+		@include respond-to(xs)  {
+			font-size: 1rem;
+			padding: 0 1rem;
+			line-height: 1.4;
+		}
+	}
+	div {
+		padding: 3rem;
+
+		@include respond-to(md)  {
+			padding: 2rem 0;
+		}
+	
+		@include respond-to(sm) {
+			padding: 0.5rem 0 4rem 0;
+			width: 100%;	
+
+		}
+		@include respond-to(xs) {
+			padding: 1rem;
+			width: 100%;
+		}
+		a {
+			padding: 0.5rem 2.5rem;
+			margin: 1rem;
+			border-radius: 5px;				
+			cursor: pointer;
+
+			&:hover {
+				text-decoration:none;
+			}
+			
+			@include respond-to(md)  {
+				font-size: 0.975rem;
+				padding: 0.5rem 2rem;
+			}
+			@include respond-to(sm)  {	
+				display: inline;
+				padding: 0.5rem 0.8rem;
+				margin: 0.5rem;
+				font-size: 0.875rem;
+			}
+			@include respond-to(xs)  {
+				display: block;
+				padding: 0.5rem 1rem;
+				margin: 0.5rem;
+				font-size: 0.775rem;
+			}
+
+			&:first-child {
+				background: $brand-primary;
+				color: #FFFFFF;
+				border: solid 1px darken($brand-primary, 2%);
+				font-size: 1.2rem;
+
+				&:hover {
+					background: darken($brand-primary, 5%);
+					border: solid 1px darken($brand-primary, 6%);
+				}
+			}
+			&:last-child {
+				background: $brand-success;
+				color: #FFFFFF;
+				border: solid 1px darken($brand-success, 2%);
+				font-size: 1.2rem;
+				&:hover {
+					background: darken($brand-success, 5%);
+					border: solid 1px darken($brand-success, 6%);
+				}
+			}
+		}
+	}
+}
+}
+
+
+
+#features {
+
+@extend .container-fluid;
+padding: 4rem 0;
+
+@include respond-to(xs) {
+	padding: 4rem 0 0 0;
+}
+
+header {	
+	@extend .container;
+	margin: 0 auto;
+	padding-bottom: 4rem;		
+	h2 {
+		font-weight: 300;
+		font-size: 1.8rem;
+		line-height: 1.5;
+		text-align: center;
+	}
+	@include respond-to(sm) {						
+		h2 {
+			font-size: 1.1rem;								
+		}
+	}
+	@include respond-to(xs) {						
+		h2 {
+			font-size: 1rem;								
+		}
+	}
+}
+
+
+aside {		
+	padding: 0 4rem;
+	@extend .col-lg-3;
+	@extend .col-md-6;
+	@extend .col-sm-6;
+	
+	@include respond-to(sm) {
+		padding: 0 2rem;
+	}
+	@include respond-to(xs) {
+		padding: 0 2rem 1rem 2rem;
+	}
+	@include respond-to(lg) {
+		padding: 0 1rem;
+	}
+	
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			padding: 1rem 0;
+			h3 {
+				font-size: 1.2rem;
+				font-weight: 600;
+			}
+			p {
+				color: #909a9f;
+			}				
+			@include respond-to(lg) {
+				
+				h3 {
+					font-size: 1.1rem;
+				}
+				p {
+					font-size: 0.975rem;
+				}
+			}
+			@include respond-to(md) {
+				
+				h3 {
+					font-size: 1rem;
+				}
+				p {
+					font-size: 0.875rem;
+				}
+			}
+			@include respond-to(xs) {
+				border-top: solid 1px #e7e8eb;
+				padding: 1.5rem 2rem 0 2rem;
+			}
+		}
+	}		
+}
+#features-right {
+	ul {
+		li {
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+		.features-pager {
+		padding: 2rem 0;
+		@include respond-to(xs) {
+			display: none;
+		}
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			li {
+				display: inline-block;
+				margin: 1rem 0.5rem;
+				span {
+					@extend .fa;
+					@extend .fa-circle;
+					color: #e7e8eb;
+				}
+				&.active {
+					span {
+						color: #ababab;
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+
+div#features-slider {
+	@extend .col-md-6;
+
+	@include respond-to(sm) {
+		display: none;			
+	}
+	@include respond-to(xs) {
+		display: none;
+	}
+	@include respond-to(md) {
+		display: none;
+	}
+	ul {
+		@extend .col-md-12;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			img {
+				@extend .img-responsive;
+			}
+		}
+	}
+	.features-pager {
+		padding: 2rem 0;
+		@include respond-to(xs) {
+			display: none;
+		}
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			li {
+				display: inline-block;
+				margin: 1rem 0.5rem;
+				span {
+					@extend .fa;
+					@extend .fa-circle;
+					color: #e7e8eb;
+				}
+				&.active {
+					span {
+						color: #ababab;
+					}
+				}
+			}
+		}
+	}
+	#features-overview {
+		@extend .col-md-12;
+		padding: 4rem 0;
+		text-align: center;
+		font-weight: 300;
+		font-size: 1.2rem;
+		color: #9ba5aa;
+		line-height: 1.8;
+
+		@include respond-to(md) {
+			font-size: 1rem;
+			line-height: 2;				
+		}
+		@include respond-to(lg) {
+			font-size: 1rem;
+			line-height: 2;				
+		}
+	}		
+}
+}
+
+#features-mobile-slider {		
+	@extend .col-md-12;		
+	display: none;
+	
+	@include respond-to(md) {
+		display: block;
+		padding: 0 1rem;
+	}
+	@include respond-to(xs) {
+		display: block;
+		padding: 0;
+	}
+	ul {			
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			img {
+				@extend .img-responsive;
+			}
+		}
+		
+	}
+	div {
+		padding: 2rem 0;
+		@include respond-to(md) {
+			padding: 1rem 0 2rem 0;
+		}
+		@include respond-to(xs) {
+			display: none;
+		}
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			li {
+				display: inline-block;
+				margin: 1rem 0.5rem;
+				span {
+					@extend .fa;
+					@extend .fa-circle;
+					color: #e7e8eb;
+				}
+				&.active {
+					span {
+						color: #ababab;
+					}
+				}
+			}
+		}	
+	}
+}
+
+#coverage {
+	background: url('/img/know_your_always_covered.jpg') no-repeat 0 0;
+	background-size: cover;
+	height: 40rem;
+
+	@include respond-to(xs) {
+		background: url('/img/know_your_always_covered.jpg') no-repeat -400px 0;
+		background-size: cover;
+		height: 30rem;
+	}
+
+	article {
+		@extend .col-md-6;
+		@extend .col-md-offset-6;
+		padding: 12rem 4rem;
+		color: #FFFFFF;
+		@include respond-to(xs) {
+			padding: 4rem 3rem;
+			h2 {
+				font-size: 2rem;
+				font-weight: 600;
+				margin-bottom: 1rem;
+			}
+			p {
+				font-size: 1rem;
+			}
+		}
+		h2 {
+			text-shadow: 1px 1px 1px rgba(0,0,0, 0.3);
+		}
+		p {
+			font-size: 1.2rem;
+			font-weight: 300;
+			text-shadow: 1px 1px 1px rgba(0,0,0, 0.3);
+		}
+		div {
+			padding: 2rem 0;
+			a {
+				background: $brand-success;
+				color: #FFFFFF;
+				border: solid 1px darken($brand-success, 2%);
+				padding: 0.5rem 2.5rem;					
+				border-radius: 5px;				
+				cursor: pointer;
+				transition: all 500ms ease;
+				&:hover {
+					background: darken($brand-success, 5%);
+					border: solid 1px darken($brand-success, 6%);
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+#benefits {
+	
+
+	padding: 4rem 0 3rem 0;
+	background: #252525;
+	color: #FFFFFF;
+
+	div {
+		@extend .row;
+	}
+	article {
+		@extend .col-md-3;
+		padding: 0 4rem;
+		h3 {
+			font-size: 1.2rem;
+		}
+		p {
+			color: #9ba5aa;
+			font-size: 0.875rem;
+		}
+
+		@include respond-to(xs) {
+			padding: 0 4rem 2rem 4rem;
+
+			&:last-child {
+				padding: 0 4rem;
+			}
+		}
+	}
+}
+
+// override the default placeholder color
+::-webkit-input-placeholder {
+   color: #aab2b6 !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #aab2b6 !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #aab2b6 !important;
+}
+
+:-ms-input-placeholder {
+   color: #aab2b6 !important;
+}
+#register-form {
+	@extend .container;
+
+	@include respond-to(xs) {
+		padding: 0 2rem;
+	}
+	header {
+		@extend .container;
+		text-align: center;
+		padding: 8rem 0 0 0;
+		@include respond-to(xs) {
+			padding: 4rem 0 0 0;
+			h2 {
+				font-size: 1.8rem;
+			}
+		}
+		h2 {
+			font-weight: 700;
+		}
+		p {
+			color: #9ba5aa;
+		}
+	}
+	form {
+		padding: 2rem 0 8rem 0;
+
+		@include respond-to(xs) {
+			padding: 2rem 0 4rem 0;
+		}
+		@extend .col-md-6;
+		@extend .col-md-offset-3;
+		fieldset {
+			@extend .form-group;
+			input[type='text'], input[type='email'], select {
+				height: 50px;
+			}
+			input[type='text'], input[type='email'], select, textarea {
+				@extend .form-control;
+				margin-bottom: 1rem;
+				border: solid 1px #e6e7ea;
+
+			}
+		}
+		button[type='submit'] {
+			@extend .btn;
+			@extend .btn-success;
+			@extend .btn-lg;
+			@extend .btn-block;
+		}
+		div {
+			@extend .row;
+			fieldset {
+				@extend .col-md-6;
+			}
+		}
+	}
+}
+
+#global-footer {
+	padding: 4rem 0 1rem 0;
+	background: #252525;
+	color: #acacac;
+	@include respond-to(xs) {
+		padding: 0 0 0.5rem 0;
+	}
+	#footer-logo {
+		
+		background: url('/img/logo_xs.png') no-repeat 0 0;
+		width: 122px;
+		height: 31px;
+		text-indent: -99999px;
+		margin: 0 auto;
+		display: block;
+	}
+	p.copyright {
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 0.575rem;
+		color: #757575;
+		margin-top: 4rem;
+	}
+	#footer-nav {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			margin-bottom: 4rem;
+			li {
+				display: inline-block;
+				@include respond-to(xs) {
+					&:first-child {
+						border-top: solid 1px #323232;
+					}
+					display: block;
+					border-bottom: solid 1px #323232;
+					padding: 0.5rem 0 0.7rem 0;
+					a {
+						display: block;
+						padding: 0;
+					}
+					&:hover {
+						background: #292929;
+						cursor: pointer;
+
+
+					}
+				}
+				a {
+					color: #FFFFFF;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					padding: 0.5rem;
+					font-size: 0.775rem;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}

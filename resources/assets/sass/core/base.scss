@@ -1,0 +1,15 @@
+@import "colors";
+
+html, body {
+	font-family: 'Open Sans', sans-serif !important;	
+}
+// dropzone styles -- move to library styles
+.dropzone {
+	border: 2px dashed rgba(0, 0, 0, 0.3) !important;
+	margin-bottom: 4rem;
+}
+.dropzone.dz-clickable .dz-message, .dropzone.dz-clickable .dz-message * {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #979797;
+}

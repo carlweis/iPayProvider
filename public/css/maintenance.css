@@ -1,0 +1,41 @@
+html, body {
+     font-family: "proxima-nova",sans-serif;
+     text-align: center;
+     padding: 4rem 0;
+     background: #212121;
+     color: #FFFFFF;
+}
+
+h1 {
+    text-align: center;
+}
+#logo {
+    display: block;
+    background: url('../img/logo.png') no-repeat 0 0; 
+    width: 242px;
+    height: 63px; 
+    text-indent: -99999px;
+    padding: 0;
+    margin: 0 auto;
+}
+p {
+    padding: 4rem 0;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5;       
+}
+strong {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.675rem;
+    line-height: 2.5;           
+}
+
+#maintenance-msg {
+    color: #cbcbcb;
+    padding: 1rem;
+    p {
+        font-size: 1rem;
+    }
+}

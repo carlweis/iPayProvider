@@ -1,0 +1,62 @@
+$minimal-background: #252525;
+
+body.minimal {
+    background: $minimal-background;
+}
+
+#minimal-header {
+    background: $minimal-background;
+    padding: 0 0 6rem 0;
+}
+
+#content.minimal {
+    background: $minimal-background;
+    color: #eee;
+    min-height: 105vh;
+}
+
+.minimal-callout {
+    @extend .container;
+    padding-top: 8rem;
+    text-align: center;
+    h5 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #ababab;
+    }
+    h1 {
+        font-size: 5rem;
+        font-weight: 800;
+        padding-bottom: 1rem;
+    }
+    h3 {
+        font-weight: 300;
+        font-size: 1.4rem;
+    }
+}
+
+#social-share {
+    text-align: center;
+    padding: 5rem 0;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 1rem;
+            display: inline-block;
+            padding: 2rem 1rem 2rem 1.5rem;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            border-radius: 50%;
+            background: #202020;
+        }
+    }
+    p {
+        font-weight: 300;
+        font-size: 1.3rem;
+        padding: 1rem 0;
+    }
+}

@@ -1,0 +1,22 @@
+.btn {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+.btn-secondary {
+    background: #e0e0e0;
+    color: #484848;
+    border-color: #e0e0e0;
+
+    &:hover {
+        background: darken(#e0e0e0, 3%);
+        border-color: darken(#e0e0e0, 3%);
+    }
+    &:active, &:focus  {
+        background: #e0e0e0;
+        border-color: #e0e0e0;
+    }
+}
+.btn-secondary:active, #tablebar a:active, .btn-secondary.active, #tablebar a.active, .open > .btn-secondary.dropdown-toggle, #tablebar .open > a.dropdown-toggle {
+    background: darken(#e0e0e0, 3%);
+    border-color: darken(#e0e0e0, 3%);
+}

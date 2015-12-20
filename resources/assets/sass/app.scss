@@ -1,0 +1,12 @@
+@import "./vendor/bower_components/bootstrap/scss/bootstrap.scss";
+@import "./vendor/bower_components/bootstrap/scss/mixins.scss";
+@import "./vendor/bower_components/font-awesome/scss/font-awesome.scss";
+
+@import "core/mixins";
+@import "core/base";
+@import "core/forms";
+@import "core/navigation";
+@import "core/buttons";
+
+@import "pages/landing";
+@import "pages/minimal";
